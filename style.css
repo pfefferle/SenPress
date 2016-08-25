@@ -4,12 +4,12 @@ Theme URI: https://github.com/pfefferle/SenPress
 Author: Matthias Pfefferle
 Author URI: http://notizblog.org/
 Description: Pure Zen
-Version: 1.0.0-dev
+Version: 1.0.0
 License: GNU General Public License Version 3
 License URI: http://www.gnu.org/licenses/gpl.html
 Template: sempress
-Tags: white, gray, light, black, custom-menu, custom-colors, custom-header, custom-background, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats, threaded-comments, flexible-width, right-sidebar, two-columns, one-column, editor-style, featured-images, theme-options
-Text Domain: sempress
+Tags: white, gray, light, black, custom-menu, sticky-post, microformats, rtl-language-support, translation-ready, full-width-template, post-formats, threaded-comments, flexible-width, one-column, featured-images
+Text Domain: senpress
 
 This is a child theme for the SemPress theme (http://wordpress.org/themes/sempress)
 and, like WordPress, licensed under the GPL.
@@ -1100,7 +1100,7 @@ ol.commentlist {
 	z-index: 4;
 }
 #access ul ul {
-	display: none;
+  display: none;
 }
 #access li {
 	display: inline-block;
@@ -1373,12 +1373,12 @@ ins {
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
 	#page {
-	width: 90%;
-	margin: 0px auto;
+		width: 90%;
+		margin: 0px auto;
 	}
 
 	.entry-content iframe, .entry-content object, .entry-content embed {
-	max-width: 100%;
+		max-width: 100%;
 	}
 
 	/*
@@ -1395,33 +1395,33 @@ ins {
 	.wp-caption,
 	.post img,
 	.page img {
-	max-width: 100%;
-	/* When images are too wide for containing element, force them to fit. */
-	height: auto;
-	/* Override height to match resized width for correct aspect ratio. */
+		max-width: 100%;
+		/* When images are too wide for containing element, force them to fit. */
+		height: auto;
+		/* Override height to match resized width for correct aspect ratio. */
 	}
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 767px) {
 	html {
-	font-size: 0.8em;
+		font-size: 0.8em;
 	}
 
 	#sidebar .widget-area {
-	width: 90%;
+		width: 90%;
 	}
 	#sidebar #secondary, #sidebar #tertiary {
-	float: none;
+		float: none;
 	}
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	html {
-	font-size: 0.8em;
+		font-size: 0.8em;
 	}
 
 	.entry-content iframe, .entry-content object, .entry-content embed {
-	height: auto;
+		height: auto;
 	}
 }
 /* ==========================================================================
@@ -1430,24 +1430,24 @@ ins {
 	 ========================================================================== */
 @media print {
 	* {
-	background: transparent !important;
-	color: #000 !important;
-	/* Black prints faster: h5bp.com/s */
-	box-shadow: none !important;
-	text-shadow: none !important;
+		background: transparent !important;
+		color: #000 !important;
+		/* Black prints faster: h5bp.com/s */
+		box-shadow: none !important;
+		text-shadow: none !important;
 	}
 
 	a,
 	a:visited {
-	text-decoration: underline;
+		text-decoration: underline;
 	}
 
 	a[href]:after {
-	content: " (" attr(href) ")";
+		content: " (" attr(href) ")";
 	}
 
 	abbr[title]:after {
-	content: " (" attr(title) ")";
+		content: " (" attr(title) ")";
 	}
 
 	/*
@@ -1455,38 +1455,38 @@ ins {
 	 */
 	a[href^="javascript:"]:after,
 	a[href^="#"]:after {
-	content: "";
+		content: "";
 	}
 
 	pre,
 	blockquote {
-	border: 1px solid #999;
-	page-break-inside: avoid;
+		border: 1px solid #999;
+		page-break-inside: avoid;
 	}
 
 	thead {
-	display: table-header-group;
-	/* h5bp.com/t */
+		display: table-header-group;
+		/* h5bp.com/t */
 	}
 
 	tr,
 	img {
-	page-break-inside: avoid;
+		page-break-inside: avoid;
 	}
 
 	img {
-	max-width: 100% !important;
+		max-width: 100% !important;
 	}
 
 	p,
 	h2,
 	h3 {
-	orphans: 3;
-	widows: 3;
+		orphans: 3;
+		widows: 3;
 	}
 
 	h2,
 	h3 {
-	page-break-after: avoid;
+		page-break-after: avoid;
 	}
 }
