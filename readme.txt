@@ -3,7 +3,7 @@ Contributors: pfefferle
 Tags: one-column, custom-menu, featured-images, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready, blog
 Requires at least: 4.0
 Tested up to: 4.7.2
-Stable tag: 1.0.3
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,3 +32,4 @@ SenPress is distributed under the terms of the GNU GPL Version 3
 
 * SemPress (parent theme) - Matthias Pfefferle, GPLv3
 * Genericons - Automattic, GPL
+* OpenSans, Apache License, Version 2.0
