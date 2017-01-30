@@ -26,3 +26,17 @@ function senpress_setup() {
  * Tell WordPress to run sempress_setup() when the 'after_setup_theme' hook is run.
  */
 add_action( 'after_setup_theme', 'senpress_setup', 12 );
+
+
+/**
+ * Enqueue theme scripts
+ *
+ * @uses wp_enqueue_scripts() To enqueue scripts
+ *
+ * @since SenPress 1.0.1
+ */
+function senpress_enqueue_scripts() {
+	wp_enqueue_style( 'senpress-opensans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' );
+	wp_enqueue_style( 'sempress-style', get_stylesheet_uri(), array( 'senpress-opensans' ) );
+}
+add_action( 'wp_enqueue_scripts', 'senpress_enqueue_scripts' );
